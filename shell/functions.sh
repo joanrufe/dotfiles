@@ -23,3 +23,10 @@ function gdbc() {
 	git branch -D $1
 	git checkout -b $1
 }
+
+function dotenv() {
+	set -a
+	[ -f .env ] && . ./.env
+	set +a
+	$@
+}
