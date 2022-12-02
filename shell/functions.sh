@@ -19,6 +19,7 @@ function recent_dirs() {
 }
 
 function gdbc() {
+	git fetch --all -p
 	git checkout origin/$1
 	git branch -D $1
 	git checkout -b $1

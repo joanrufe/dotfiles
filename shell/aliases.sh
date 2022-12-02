@@ -21,6 +21,7 @@ alias gpsf="git push --force"
 alias gpl="git pull --rebase --autostash"
 alias gb="git branch"
 alias gl='$DOTLY_PATH/bin/dot git pretty-log'
+alias gcn="git checkout -b"
 
 # Utils
 alias k='kill -9'
