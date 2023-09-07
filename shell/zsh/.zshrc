@@ -27,3 +27,15 @@ prompt ${DOTLY_THEME:-codely}
 source "$DOTLY_PATH/shell/zsh/bindings/dot.zsh"
 source "$DOTLY_PATH/shell/zsh/bindings/reverse_search.zsh"
 source "$DOTFILES_PATH/shell/zsh/key-bindings.zsh"
+
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+export NETSKOPE_CERT_PATH="/Library/Application Support/Netskope/STAgent/download/nscacert.pem"
+
+export NODE_EXTRA_CA_CERTS=$NETSKOPE_CERT_PATH
+
+export GIT_SSL_CAPATH=$NETSKOPE_CERT_PATH
+
+export CURL_CA_BUNDLE=$NETSKOPE_CERT_PATH

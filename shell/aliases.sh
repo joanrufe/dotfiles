@@ -29,3 +29,12 @@ alias i.='(idea $PWD &>/dev/null &)'
 alias c.='(code $PWD &>/dev/null &)'
 alias o.='open .'
 alias up='dot package update_all'
+
+# JLL shit
+# alias disable-netskope="sudo launchctl unload /Library/LaunchDaemons/com.netskope.client.auxsvc.plist && launchctl unload -w /Library/LaunchAgents/com.netskope.stagentui.plist"
+
+# alias enable-netskope="sudo launchctl load /Library/LaunchDaemons/com.netskope.client.auxsvc.plist && launchctl load -w /Library/LaunchAgents/com.netskope.stagentui.plist"
+
+# alias disable-tanium="sudo launchctl unload /Library/LaunchDaemons/com.tanium.taniumclient.plist"
+
+# alias enable-tanium="sudo launchctl load /Library/LaunchDaemons/com.tanium.taniumclient.plist"
